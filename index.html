@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Link to alert</h1>
+   <div id="page1">
+        <a href="#" onclick="showAlert()">Alert link</a>
+        <h1>Mobile Phone Lookup</h1>
+        <br><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUCBQsIuJzvIn1XxFzSxP-_0PhsNwTDBpKK-lMRBvbzw&s" onclick="showMessage('Thank you for purchasing oppo smartphone')" alt="Mobile 1">
+        <img src="https://motorolaus.vtexassets.com/assets/vtex.file-manager-graphql/images/105f4b8d-0f23-46c3-9afb-5db72f7050df___e369afb47a84b5a4a8e917bf512132a5.png" onclick="showMessage('Thank you for purchasing motorola smartphone')" alt="Mobile 2">
+        <img src="https://propakistani.pk/price/wp-content/uploads/2021/11/Nokia-G20-price-2-200x300.png" onclick="showMessage('Thank you for purchasing nokia smartphone')" alt="Mobile 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy_R0woPM0AZKskn7EGd6SFZ-2jU6Ez3jg3YsOIpDMCw&s" onclick="showMessage('Thank you for purchasing samsung smartphone')" alt="Mobile 4">
+    </div>
+
+    <div id="page2">
+        <h1>Student Table</h1>
+        <table id="studentTable">
+            <tr>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Mark</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Susan</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Lisa</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Bart</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Henry</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Riley</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="page3">
+    <h1>Counter</h1>
+  <button id="increaseBtn" onclick="increaseCounter()">Increase</button>
+  <button id="decreaseBtn" onclick="decreaseCounter()">Decrease</button>
+  <p id="counter">0</p>
+
+    </div>
+
+    <h1>Student Management</h1>
+
+
+    <form id="signupForm" onsubmit="return displayFormData()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <div id="itemDetails">
+        <h2>Item Details</h2>
+        <p>Some brief details about the item...</p>
+        <button onclick="showFullDetails()">Read More</button>
+        <div id="fullDetails" style="display: none;">
+        </div>
+    </div>
+
+
+    <h2>Student Table</h2>
+    <table id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
